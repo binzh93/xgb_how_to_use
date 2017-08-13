@@ -47,7 +47,7 @@ test_label = test_data[:,-1]   #这里是一行的
 
 #print train_x.shape, type(train_x)
 #print train_label.shape, type(train_label)
-train_label = np.array(np.mat(np.mat(train_label).T))   #转换成列标签
+train_label = np.array(np.mat(train_label).T)   #转换成列标签
 #print train_label
 
 #转换成xgboost的DMatrix格式
