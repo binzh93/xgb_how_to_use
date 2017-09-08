@@ -25,7 +25,9 @@ print y2len,x2len
 
 
 f1 = open('F:/horseTrain.csv', 'w')
-f1.write('f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20,label\n')
+for i in xrange(21):
+  f1.write('f' + str(i) + ',')
+f1.write('label\n')
 for i in xrange(y1len):
 	for j in xrange(x1len):
 		if j == (x1len-1):
