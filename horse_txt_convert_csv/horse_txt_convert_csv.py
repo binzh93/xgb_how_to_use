@@ -39,7 +39,9 @@ f1.close()
 
 
 f2 = open('F:/horseTest.csv', 'w')
-f2.write('f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20,label\n')
+for i in xrange(21):
+  f2.write('f' + str(i) + ',')
+f2.write('label\n')
 for i in xrange(y2len):
 	for j in xrange(x2len):
 		if j == (x2len-1):
